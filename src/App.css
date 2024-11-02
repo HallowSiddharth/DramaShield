@@ -1,0 +1,79 @@
+.App {
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f0f8ff; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding around the content */
+}
+
+h2 {
+  color: #2c3e50; /* Darker color for the heading */
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #3498db; /* Blue border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s; /* Transition for border color on focus */
+}
+
+input[type="text"]:focus {
+  border-color: #2980b9; /* Darker blue on focus */
+  outline: none; /* Remove outline */
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  background-color: #3498db; /* Button color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker button color on hover */
+}
+
+.username-list {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  text-align: left;
+  margin-top: 20px;
+}
+
+.username-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  background-color: #ecf0f1; /* Light gray background for items */
+  padding: 10px; /* Padding inside items */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.username-item:hover {
+  background-color: #dfe6e9; /* Darker gray on hover */
+}
+
+.butt {
+  background-color: #e74c3c; /* Red background for delete button */
+  margin-top: 10px; /* Space between list and button */
+  margin-right: 50px;
+}
+
+.butt:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
