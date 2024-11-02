@@ -27,7 +27,7 @@ But Unblocking wise:
 
 - Click on settings and privacy.
 - Click on Privacy and safety.
-- Click on Mutue and block.
+- Click on Mute and block.
 - Click on Blocked accounts.
 - Find the account you want to unblock.
 - Click the unblock button.
