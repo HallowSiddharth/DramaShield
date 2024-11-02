@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "UnDramatize",
+    "version": "1.0",
+    "description": "Removes tweets from a specific user on Twitter.",
+    "permissions": ["activeTab", "scripting","storage"],
+    "host_permissions": ["*://twitter.com/*", "*://x.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://twitter.com/*", "*://x.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["usernames.json"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+  }
+  
