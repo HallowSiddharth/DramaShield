@@ -35,6 +35,8 @@ But Unblocking wise:
 **In Drama Shield:**
 You can just click the extension, press the uncheck mark corresponding to the account name.
 
+> Note: Drama Shield doesn't delete tweets if you are in the personal page of that user. It just removes them from the timeline. So if you want to still see their tweets, you can always view their profile.
+
 ## What is this NOT?
 
 This is not a shut off tool.

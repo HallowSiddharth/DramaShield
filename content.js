@@ -20,7 +20,22 @@ async function loadUsernames() {
 async function deleteUserTweets() {
     //console.log("deleteUserTweets function has started");
     const usernamesToDelete = await loadUsernames(); // Load the usernames as an array
-  
+    
+     // Check the current URL
+     const currentUrl = window.location.href;
+     const userPagePrefix = "https://x.com/"; 
+
+     if (currentUrl.startsWith(userPagePrefix)) {
+        const username = currentUrl.substring(userPagePrefix.length); // Extract username after the prefix
+        
+        // If the username is in the usernamesToDelete array, skip tweet deletion
+        if (usernamesToDelete.includes(username)) {
+            console.log(`Currently on personal profile page: ${username}. Skipping tweet deletion.`);
+            return; // Exit the function if on personal page
+        }
+    }
+
+     
     // Select all elements with the username class
     const tweetUsernames = document.querySelectorAll('.css-175oi2r.r-1wbh5a2.r-dnmrzs');
     //console.log(`Total username elements found: ${tweetUsernames.length}`);
