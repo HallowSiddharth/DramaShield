@@ -7,8 +7,14 @@
   border-bottom: 2px solid #eee;
 }
 
+.logo-container {
+  display: flex; /* This will align logo and title side by side */
+  align-items: center; /* Vertically center them */
+}
+
 h2 {
   color: #48097c;
+  margin-left: 10px; /* Adds space between the logo and the title */
   margin: 0;
 }
 
@@ -26,4 +32,9 @@ button {
 
 button:hover {
   background-color: #48097c;
+}
+
+.logo {
+  width: 50px; 
+  height: auto; 
 }
