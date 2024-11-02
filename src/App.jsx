@@ -27,15 +27,22 @@ function App() {
   }
 
   // Handler to save JSON file
-  const handleSave = () => {
-    const data = JSON.stringify(usernames, null, 2);
-    const blob = new Blob([data], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'usernames.json';
-    link.click();
+  const handleSave = async () => {
+    try {
+      await fetch('http://localhost:5000/update-usernames', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ usernames: usernames.map(user => user.name) }),
+      });
+      alert('File saved successfully!');
+    } catch (error) {
+      console.error('Error saving file:', error);
+      alert('Failed to save file');
+    }
   };
+  
 
   return (
     <div className="App">
