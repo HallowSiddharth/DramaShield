@@ -1,10 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "UnDramatize",
+    "name": "Drama Shield",
     "version": "1.0",
-    "description": "Removes tweets from a specific user on Twitter.",
+    "description": "Removes tweets from attention seekers / drama people on Twitter.",
     "permissions": ["activeTab", "scripting","storage"],
     "host_permissions": ["*://twitter.com/*", "*://x.com/*"],
+    "icons":{
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
     "content_scripts": [
       {
         "matches": ["*://twitter.com/*", "*://x.com/*"],
