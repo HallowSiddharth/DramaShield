@@ -7,3 +7,54 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.btns button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btns button:hover {
+  background-color: #48097c;
+  transform: scale(1.05);
+}
+
+.btns button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+.extension-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  
+.image-description {
+    font-size: 0.9em;
+    color: #757575; /* Light grey color for the description */
+    margin-top: 8px;
+  }
+  
+.company-info {
+    background-color: #f3f3f3; /* Slightly darker background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+.company-info h3 {
+    margin-top: 0;
+  }
+  

@@ -1,13 +1,13 @@
 import React from 'react'
-import './App.css';
+import './Header.css';
 
-const App = () => {
+const Header = () => {
   return (
     <div className='but1 makecenter'>
       <h2>DramaShield</h2>
-      <button>Get extention</button>
+      <button>Get Extension</button>
     </div>
   )
 }
 
-export default App
+export default Header

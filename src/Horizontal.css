@@ -1,0 +1,28 @@
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .feature-item {
+    max-width: 250px;
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
