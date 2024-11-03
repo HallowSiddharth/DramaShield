@@ -30,9 +30,21 @@ function App() {
     setUsernames(updatedUsernames);
   };
 
-  const deleteUser = () => {
+  const deleteUser = async () => {
     const updatedUsernames = usernames.filter(user => !user.checked);
     setUsernames(updatedUsernames);
+
+    try {
+      await fetch('http://localhost:5000/update-usernames', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ usernames: updatedUsernames.map(user => user.name) }),
+      });
+      console.log('Usernames updated on the server:', updatedUsernames.map(user => user.name));
+    } catch (error) {
+      console.error('Error updating usernames on server:', error);
+      alert('Failed to update usernames on server');
+    }
   };
 
   const handleSave = async () => {
