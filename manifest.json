@@ -5,6 +5,9 @@
     "description": "Removes tweets from attention seekers / drama people on Twitter.",
     "permissions": ["activeTab", "scripting","storage"],
     "host_permissions": ["*://twitter.com/*", "*://x.com/*"],
+    "action":{
+      "default_popup":"popup.html"
+    },
     "icons":{
         "16": "icon16.png",
         "48": "icon48.png",
