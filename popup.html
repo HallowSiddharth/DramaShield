@@ -11,8 +11,8 @@
       background-color: #f4f4f9;
       margin: 0;
       padding: 10px;
-      width: 300px; /* Matches the typical Chrome extension popup width */
-      height: 350px; /* Matches the typical Chrome extension popup height */
+      width: 300px; 
+      height: 350px; 
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -31,7 +31,7 @@
       margin: 0 0 15px 0;
       width: 100%;
       height: 100%;
-      overflow-y: auto; /* Makes the list scrollable if needed */
+      overflow-y: auto; 
       background-color: #fff;
       border: 1px solid #ddd;
       border-radius: 6px;
@@ -88,48 +88,49 @@
     }
 
     /* Base styling for buttons */
-    button {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #fff;
-      background: linear-gradient(90deg, #4CAF50, #2196F3);
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background 0.3s ease-in-out, transform 0.2s;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+      button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #333, #000); /* Black gradient background */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-    button:hover {
-      background: linear-gradient(90deg, #45A049, #1976D2);
-      transform: scale(1.05);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
+  button:hover {
+    background: linear-gradient(90deg, #444, #222); /* Darker black gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
 
-    button:active {
-      transform: scale(0.98);
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    }
+  button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
 
-    /* Specific button styles */
-    #addButton {
-      background: linear-gradient(90deg, #FF9800, #FF5722);
-    }
+  /* Specific button styles */
+  #addButton {
+    background: linear-gradient(90deg, #191919, #2e2e2e); /* Dark grey to black */
+  }
 
-    #addButton:hover {
-      background: linear-gradient(90deg, #FB8C00, #E64A19);
-    }
+  #addButton:hover {
+    background: linear-gradient(90deg, #444, #222); /* Orange gradient on hover */
+  }
 
-    #confirmButton {
-      background: linear-gradient(90deg, #4CAF50, #8BC34A);
-    }
+  #confirmButton {
+    background: linear-gradient(90deg, #333, #000); /* Black gradient */
+  }
 
-    #confirmButton:hover {
-      background: linear-gradient(90deg, #388E3C, #7CB342);
-    }
+  #confirmButton:hover {
+    background: linear-gradient(90deg, #444, #222); /* Darker black gradient on hover */
+  }
+
 
 
     /* Scrollbar styling */
