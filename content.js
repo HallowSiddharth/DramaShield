@@ -93,7 +93,7 @@ function addHoverButtonToTweets() {
             
             if (!tweet.querySelector('.shield-button')) {
                 const shieldButton = document.createElement('button');
-                shieldButton.innerText = "🛡️ Shield";
+                shieldButton.innerText = "🛡️";
                 shieldButton.className = "shield-button";
                 shieldButton.style.cssText = `
                     display: none; /* Hidden by default */
