@@ -1,6 +1,7 @@
 import React from 'react';
 import './MainC.css';
-import teammori from './assets/teammori.jpeg';
+import img1 from './assets/img1.png';
+import img2 from './assets/img2.png';
 
 const MainC = () => {
   const handleExtensionClick = () => {
@@ -16,7 +17,7 @@ const MainC = () => {
       <h1 className='title'>DramaShield - Your Free Drama Defender!</h1>
       
       <div className='btns'>
-        <button onClick={handleExtensionClick}>Get Extension</button>
+        <button onClick={handleSourceCodeClick}>Get Extension</button>
         <button onClick={handleSourceCodeClick}>Source Code</button>
       </div>
 
@@ -26,10 +27,12 @@ const MainC = () => {
         </div>
 
       <div className='image-section'>
-        <img src={teammori} alt='DramaShield preview' className='extension-image' />
+        <img src={img1} alt='DramaShield preview' className='extension-image' />
         <p className='image-description'>
           DramaShield in action on Twitter, helping you filter out unwanted tweets.
         </p>
+        <img src={img2} alt='DramaShield preview' className='extension-image1' />
+        
       </div>
 
       {/* Company Info Section */}
